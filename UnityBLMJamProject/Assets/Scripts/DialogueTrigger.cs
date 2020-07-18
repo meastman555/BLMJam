@@ -9,13 +9,19 @@ public class DialogueTrigger : MonoBehaviour
     public string[] sentences;
     public GameObject dialogueBox;
 
-
     void Start(){
         dialogueBox.SetActive(false);
     }
 
+    //used for "cinematic" dialogue -- no pictures, no choice
     public void TriggerDialogue(){
         dialogueBox.SetActive(true);
         FindObjectOfType<DialogueController>().StartDialogue(sentences, dialogueBox);
+    }
+
+    //used for "interactive" dialogue -- picture and possible choice
+    public void TriggerDialogue(Sprite image, bool isChoice, string[] choices){
+        dialogueBox.SetActive(true);
+        FindObjectOfType<DialogueController>().StartDialogue(sentences, dialogueBox, image, isChoice, choices);
     }
 }

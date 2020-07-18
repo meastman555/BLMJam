@@ -6,6 +6,7 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     [SerializeField] float moveLength;
+    [SerializeField] float yLevel;
 
     // Start is called before the first frame update
     void Start()
@@ -22,10 +23,10 @@ public class Movement : MonoBehaviour
 
     void checkForInput(){
         if(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)){
-            transform.position = new Vector3(transform.position.x - moveLength, transform.position.y, transform.position.z);
+            transform.position = new Vector3(transform.position.x - moveLength, yLevel, transform.position.z);
         }
         if(Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)){
-            transform.position = new Vector3(transform.position.x + moveLength, transform.position.y, transform.position.z);
+            transform.position = new Vector3(transform.position.x + moveLength, yLevel, transform.position.z);
         }
     }
 }
