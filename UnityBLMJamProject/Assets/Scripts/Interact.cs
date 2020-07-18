@@ -31,7 +31,7 @@ public class Interact : MonoBehaviour
         }
     }
 
-    //try and get this working again? for some reason collisions worked but dialogue box didn't 
+    // //try and get this working again? for some reason collisions worked but dialogue box didn't 
     // void checkPlayerPosition(){
     //     if(Mathf.Abs(player.transform.position.x - transform.position.x) <= radius){
     //         interactButton.SetActive(true);

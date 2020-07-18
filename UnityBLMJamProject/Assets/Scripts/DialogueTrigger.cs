@@ -16,6 +16,7 @@ public class DialogueTrigger : MonoBehaviour
     //used for "cinematic" dialogue -- no pictures, no choice
     public void TriggerDialogue(){
         dialogueBox.SetActive(true);
+        Debug.Log("About to start dialogue");
         FindObjectOfType<DialogueController>().StartDialogue(sentences, dialogueBox);
     }
 

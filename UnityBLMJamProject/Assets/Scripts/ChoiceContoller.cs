@@ -10,22 +10,26 @@ public class ChoiceContoller : MonoBehaviour
     public GameObject Choice1;
     public GameObject Choice2;
     private int choice;
+    private string[] scenarios;
 
+    void Start(){
+        scenarios = new string[]{"Make conversation with the patron.", "Ask the kid what they're looking for."};
+    }
 
     public void ChoseOption1(){
-        TextBox.GetComponent<Text>().text = "You chose option 1.";
-        choice = 1;
+        string option = Choice1.transform.Find("Text").GetComponent<Text>().text;
+        if(option.Equals(scenarios[0])){
+            GameObject.Find("ThirstyPatron").GetComponent<DialogueTrigger>().TriggerDialogue();
+        }
     }
 
     public void ChoseOption2(){
-        TextBox.GetComponent<Text>().text = "You chose option 2.";
-        choice = 2;
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+        string option = Choice2.transform.Find("Text").GetComponent<Text>().text;
+        if(option.Equals(scenarios[1])){
+            GameObject.Find("Kid").GetComponent<DialogueTrigger>().TriggerDialogue();
+            Debug.Log("activating game object");
+            GameObject.Find("InteractableObjects").transform.Find("Medicine").gameObject.SetActive(true);
+        }
     }
 
     // Update is called once per frame

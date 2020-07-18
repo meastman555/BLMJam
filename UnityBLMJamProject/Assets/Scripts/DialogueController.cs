@@ -21,6 +21,7 @@ public class DialogueController : MonoBehaviour
      public void StartDialogue(string[] dialogue, GameObject dialogueUI){
         displayDialogue = dialogueUI;
         loadSentences(dialogue);
+        loadChoices(false, null);
         DisplayNextSentence();
     }
 
