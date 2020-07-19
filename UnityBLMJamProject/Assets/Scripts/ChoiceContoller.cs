@@ -26,9 +26,8 @@ public class ChoiceContoller : MonoBehaviour
     public void ChoseOption2(){
         string option = Choice2.transform.Find("Text").GetComponent<Text>().text;
         if(option.Equals(scenarios[1])){
-            GameObject.Find("Kid").GetComponent<DialogueTrigger>().TriggerDialogue();
-            Debug.Log("activating game object");
-            GameObject.Find("InteractableObjects").transform.Find("Medicine").gameObject.SetActive(true);
+            GameObject.Find("StaticKid").GetComponent<DialogueTrigger>().TriggerDialogue();
+            //GameObject.Find("InteractableObjects").gameObject.SetActive(false);
         }
     }
 

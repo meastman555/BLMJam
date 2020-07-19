@@ -9,14 +9,9 @@ public class DialogueTrigger : MonoBehaviour
     public string[] sentences;
     public GameObject dialogueBox;
 
-    void Start(){
-        dialogueBox.SetActive(false);
-    }
-
     //used for "cinematic" dialogue -- no pictures, no choice
     public void TriggerDialogue(){
         dialogueBox.SetActive(true);
-        Debug.Log("About to start dialogue");
         FindObjectOfType<DialogueController>().StartDialogue(sentences, dialogueBox);
     }
 

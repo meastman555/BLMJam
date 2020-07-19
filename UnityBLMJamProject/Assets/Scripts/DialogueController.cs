@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 //authored by Mason Eastman, adapted from a Brackey's Unity youtube tutorial
 public class DialogueController : MonoBehaviour
@@ -20,8 +21,8 @@ public class DialogueController : MonoBehaviour
     //used for "cinematic" dialogue
      public void StartDialogue(string[] dialogue, GameObject dialogueUI){
         displayDialogue = dialogueUI;
-        loadSentences(dialogue);
         loadChoices(false, null);
+        loadSentences(dialogue);
         DisplayNextSentence();
     }
 
@@ -57,6 +58,10 @@ public class DialogueController : MonoBehaviour
         }
         else{
             displayDialogue.SetActive(false);
+            Scene currScene = SceneManager.GetActiveScene();
+            if(currScene.buildIndex == 1){
+                GameObject.Find("ContinueController").GetComponent<ContinueController>().Advance();
+            }
         }
     }
 }
