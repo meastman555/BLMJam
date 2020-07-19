@@ -196,8 +196,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 342871401}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 337, y: 369, z: -1}
-  m_LocalScale: {x: 600, y: 600, z: 1}
+  m_LocalPosition: {x: 426, y: 381, z: -1}
+  m_LocalScale: {x: 550, y: 550, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -865,11 +865,11 @@ RectTransform:
   m_Children:
   - {fileID: 913243601}
   m_Father: {fileID: 5629688723473913498}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -348.4, y: 75}
+  m_AnchoredPosition: {x: 355.67, y: 159}
   m_SizeDelta: {x: 194.3995, y: 54.412506}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &927269755
@@ -885,11 +885,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sentences:
-  - 'Psyhiatrist: So... let''s run through this hypothetical situation again.'
-  - 'This is you: the owner of a local bodega. Many different families come in often,
-    and you know all the locals by name. Many will even stay a few extra minutes
-    just to chat.'
-  - Let's walk through it. you were working...
+  - 'Psychiatrist: So... let''s run through this hypothetical situation again.'
+  - 'Psychiatrist: This is you -- the owner of a local bodega. Many different families
+    come in often, and you know all the regulars by name. Many will even stay a few
+    extra minutes just to chat.'
+  - 'Psychiatrist: Let''s walk through it. you were working...'
   dialogueBox: {fileID: 5629688723907658349}
 --- !u!114 &927269756
 MonoBehaviour:
@@ -1025,12 +1025,12 @@ RectTransform:
   m_Children:
   - {fileID: 1930636405}
   m_Father: {fileID: 5629688723473913498}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 359, y: 75}
-  m_SizeDelta: {x: 187.7414, y: 54.412415}
+  m_AnchoredPosition: {x: 355.67, y: 76.7}
+  m_SizeDelta: {x: 194.40039, y: 50.992493}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1603778953
 MonoBehaviour:
@@ -1310,6 +1310,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startButton: {fileID: 927269753}
   quitButton: {fileID: 1603778951}
+  title: {fileID: 2119535245}
   mainCamera: {fileID: 0}
   credits: {fileID: 0}
 --- !u!4 &1937155604
@@ -1403,6 +1404,84 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2058273203}
+  m_CullTransparentMesh: 0
+--- !u!1 &2119535245
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2119535246}
+  - component: {fileID: 2119535248}
+  - component: {fileID: 2119535247}
+  m_Layer: 5
+  m_Name: Title
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2119535246
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119535245}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5629688723473913498}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -260, y: 132}
+  m_SizeDelta: {x: 369.25232, y: 120.69896}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2119535247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119535245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 80
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 90
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: BODEGA
+--- !u!222 &2119535248
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119535245}
   m_CullTransparentMesh: 0
 --- !u!212 &3797867704161303436
 SpriteRenderer:
@@ -1540,6 +1619,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 2119535246}
   - {fileID: 927269754}
   - {fileID: 5629688723907658348}
   - {fileID: 5927276971908117024}
@@ -1590,7 +1670,7 @@ RectTransform:
   - {fileID: 5629688724054818476}
   - {fileID: 537048763}
   m_Father: {fileID: 5629688723473913498}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1962,5 +2042,5 @@ Transform:
   m_LocalScale: {x: 79.26976, y: 79.77095, z: 1}
   m_Children: []
   m_Father: {fileID: 5629688723473913498}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ContinueController : MonoBehaviour
 {
+    public Sprite psyImage;
 
     private int dialogueNumber;
 
@@ -19,17 +20,21 @@ public class ContinueController : MonoBehaviour
                 break;
             case 6:
                 GameObject.Find("InteractableKid").gameObject.SetActive(false);
-                GameObject.Find("People").transform.Find("InteractableKid2").gameObject.SetActive(true);
+                GameObject.Find("Psychiatrist").transform.Find("Interlude1").GetComponent<DialogueTrigger>().TriggerDialogue(psyImage, false, null);
                 break;
             case 7:
+                GameObject.Find("People").transform.Find("InteractableKid2").gameObject.SetActive(true);
+                break;
+            case 8:
                 GameObject.Find("InteractableKid2").gameObject.SetActive(false);
                 GameObject.Find("People").transform.Find("InteractableKid3").gameObject.SetActive(true);
                 break;
-            case 8:
+            case 9:
                 SceneManager.LoadScene(2);
                 break;
             default:
-                break;        
+                Debug.Log("Before scripted events or after and a bug lol " + dialogueNumber);
+                break;     
         }
     }
 

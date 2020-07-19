@@ -8,6 +8,7 @@ public class SceneController : MonoBehaviour
 {
     [SerializeField] GameObject startButton;
     [SerializeField] GameObject quitButton;
+    [SerializeField] GameObject title;
     [SerializeField] GameObject mainCamera;
     [SerializeField] GameObject credits;
 
@@ -36,6 +37,7 @@ public class SceneController : MonoBehaviour
     public void removeButtons(){
         startButton.SetActive(false);
         quitButton.SetActive(false);
+        title.SetActive(false);
     }
 
     public void returnToMenu(){

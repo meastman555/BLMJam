@@ -1187,13 +1187,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sentences:
-  - So... you let the boy go. Even though the police came and questioned you severely
-    as a result.
-  - 'But you saw eye to eye with him and made a connection. You may see the boy again,
-    depending on how strongly you believe that connection to be. '
-  - Talking to him saved him from a criminal record, and all that would've come with
-    it. Deescalation and the most humane action proved to be the right one, and all
-    it took was some patience and understanding.
+  - 'Psychiatrist: So... you let the boy go. Even though the police came and questioned
+    you severely as a result.'
+  - 'Psychiatrist: But you saw eye to eye with him and made a connection. You may
+    see the boy again, depending on how strongly you believe that connection to be. '
+  - 'Psychiatrist: Talking to him saved him from a criminal record, and all that
+    would''ve come with it. Deescalation and the most humane action proved to be
+    the right ones, and all it took was extending some grace and patience.'
   dialogueBox: {fileID: 5629688723907658349}
 --- !u!1 &1836059556
 GameObject:
@@ -1382,6 +1382,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startButton: {fileID: 0}
   quitButton: {fileID: 0}
+  title: {fileID: 0}
   mainCamera: {fileID: 875672755}
   credits: {fileID: 135235844}
 --- !u!4 &1937155604

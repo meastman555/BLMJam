@@ -13,7 +13,7 @@ public class ChoiceContoller : MonoBehaviour
     private string[] scenarios;
 
     void Start(){
-        scenarios = new string[]{"Make conversation with the patron.", "Ask the kid what they're looking for."};
+        scenarios = new string[]{"Make conversation with the thirsty patron.", "Ask the boy what he's looking for."};
     }
 
     public void ChoseOption1(){

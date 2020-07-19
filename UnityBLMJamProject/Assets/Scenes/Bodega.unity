@@ -251,7 +251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sentences:
-  - An alien toy. Brings back fond memories of times past.
+  - A cute alien toy. It brings back fond memories of earlier times.
   dialogueBox: {fileID: 5629688723568752247}
 --- !u!114 &61660546
 MonoBehaviour:
@@ -535,11 +535,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 191427027}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -40.77522, y: 89.87631, z: 603.5}
+  m_LocalPosition: {x: -360.20718, y: 156.13135, z: -90.4375}
   m_LocalScale: {x: 200, y: 200, z: 1}
   m_Children: []
-  m_Father: {fileID: 1560580872}
-  m_RootOrder: 3
+  m_Father: {fileID: 1569148855}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &191427030
 MonoBehaviour:
@@ -572,6 +572,52 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &291341826
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 291341827}
+  - component: {fileID: 291341828}
+  m_Layer: 0
+  m_Name: Interlude1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &291341827
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 291341826}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -51.146843, y: -6.9830346, z: -15.006097}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 683179483}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &291341828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 291341826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18f1801b5aa0bd24aa684c13bfc3c4d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sentences:
+  - 'Psychiatrist: So you wanted to resolve this situation on your own...?'
+  dialogueBox: {fileID: 5629688723568752247}
 --- !u!1001 &349692548
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -618,8 +664,7 @@ PrefabInstance:
     - target: {fileID: 7769875120458027332, guid: 6468e68fed223e048860c10a7619c90a,
         type: 3}
       propertyPath: sentences.Array.data[0]
-      value: A 2-liter bottle of Electromaid. "As good as it gets" seems to be their
-        slogan.
+      value: A cold can of Electromaid. "As good as it gets" seems to be their slogan.
       objectReference: {fileID: 0}
     - target: {fileID: 7769875120458027332, guid: 6468e68fed223e048860c10a7619c90a,
         type: 3}
@@ -745,7 +790,7 @@ PrefabInstance:
     - target: {fileID: 7769875120458027339, guid: 6468e68fed223e048860c10a7619c90a,
         type: 3}
       propertyPath: m_Offset.x
-      value: -0.9089246
+      value: -0.62894833
       objectReference: {fileID: 0}
     - target: {fileID: 7769875120458027339, guid: 6468e68fed223e048860c10a7619c90a,
         type: 3}
@@ -760,7 +805,7 @@ PrefabInstance:
     - target: {fileID: 7769875120458027339, guid: 6468e68fed223e048860c10a7619c90a,
         type: 3}
       propertyPath: m_Size.x
-      value: 0.2729872
+      value: 0.8329396
       objectReference: {fileID: 0}
     - target: {fileID: 7769875120458027339, guid: 6468e68fed223e048860c10a7619c90a,
         type: 3}
@@ -887,7 +932,7 @@ PrefabInstance:
     - target: {fileID: 7769875120458027332, guid: 6468e68fed223e048860c10a7619c90a,
         type: 3}
       propertyPath: sentences.Array.data[2]
-      value: 'You: It''s alright, you''re not in any trouble, yet. '
+      value: 'You: You can''t just go around trying to shoplift. '
       objectReference: {fileID: 0}
     - target: {fileID: 7769875120458027332, guid: 6468e68fed223e048860c10a7619c90a,
         type: 3}
@@ -912,8 +957,8 @@ PrefabInstance:
     - target: {fileID: 7769875120458027332, guid: 6468e68fed223e048860c10a7619c90a,
         type: 3}
       propertyPath: sentences.Array.data[7]
-      value: You give the kid a candy bar from the shelf next to you. He opens it
-        up and takes a bite
+      value: '**You give the kid a candy bar from the shelf next to you. He opens
+        it up and takes a bite.**'
       objectReference: {fileID: 0}
     - target: {fileID: 7769875120458027332, guid: 6468e68fed223e048860c10a7619c90a,
         type: 3}
@@ -943,7 +988,7 @@ PrefabInstance:
     - target: {fileID: 7769875120458027332, guid: 6468e68fed223e048860c10a7619c90a,
         type: 3}
       propertyPath: sentences.Array.data[13]
-      value: 'You: Ha. Even better.'
+      value: 'You: Ha. Not much difference.'
       objectReference: {fileID: 0}
     - target: {fileID: 7769875120458027332, guid: 6468e68fed223e048860c10a7619c90a,
         type: 3}
@@ -954,7 +999,8 @@ PrefabInstance:
     - target: {fileID: 7769875120458027332, guid: 6468e68fed223e048860c10a7619c90a,
         type: 3}
       propertyPath: sentences.Array.data[15]
-      value: The boy darts toward the back of the store.
+      value: '**The boy''s expression changes and he darts toward the back of the
+        store.**'
       objectReference: {fileID: 0}
     - target: {fileID: 7769875120458027333, guid: 6468e68fed223e048860c10a7619c90a,
         type: 3}
@@ -1370,6 +1416,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 682801211}
   m_CullTransparentMesh: 0
+--- !u!1 &683179482
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 683179483}
+  m_Layer: 0
+  m_Name: Psychiatrist
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &683179483
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683179482}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 291341827}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &703612021 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7769875120458027337, guid: 6468e68fed223e048860c10a7619c90a,
@@ -1492,7 +1569,7 @@ Transform:
   m_LocalScale: {x: 390, y: 390, z: 1}
   m_Children: []
   m_Father: {fileID: 1560580872}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &897605849
 GameObject:
@@ -1935,9 +2012,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentences:
   - 'You: Thirsty?'
-  - 'Man: Uh-huh, this heat is killing me.'
+  - 'Customer: Uh-huh, this heat is killing me.'
   - 'You: You and everyone else is feeling it, from here to uptown.'
-  - 'Man: What''ll keep me alive?'
+  - 'Customer: What''ll keep me alive?'
   - 'You: Electromaid; doesn''t taste the best, but it''ll do the job.'
   dialogueBox: {fileID: 5629688723568752247}
 --- !u!1 &1089602799
@@ -1950,6 +2027,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1089602801}
   - component: {fileID: 1089602800}
+  - component: {fileID: 1089602803}
+  - component: {fileID: 1089602802}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -2019,8 +2098,55 @@ Transform:
   m_LocalScale: {x: 390, y: 390, z: 1}
   m_Children: []
   m_Father: {fileID: 1560580872}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1089602802
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089602799}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.1603035, y: -0.035623074}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.4, y: 0.7}
+    newSize: {x: 0.4, y: 0.7}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.079392985, y: 0.7213738}
+  m_EdgeRadius: 0
+--- !u!50 &1089602803
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1089602799}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 10000
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1093167306 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7769875120458027335, guid: 6468e68fed223e048860c10a7619c90a,
@@ -2200,8 +2326,8 @@ PrefabInstance:
     - target: {fileID: 7769875120458027332, guid: 6468e68fed223e048860c10a7619c90a,
         type: 3}
       propertyPath: sentences.Array.data[1]
-      value: 'You: Mmm, some folks might think you''re better off going to juvy for
-        trying to steal medicine.'
+      value: 'You: Mmm, some folks might think you''re better off going to juvy or
+        somewhere for trying to steal medicine.'
       objectReference: {fileID: 0}
     - target: {fileID: 7769875120458027332, guid: 6468e68fed223e048860c10a7619c90a,
         type: 3}
@@ -2252,7 +2378,7 @@ PrefabInstance:
     - target: {fileID: 7769875120458027332, guid: 6468e68fed223e048860c10a7619c90a,
         type: 3}
       propertyPath: sentences.Array.data[11]
-      value: 'Boy: It''s for my mom! I''m telling the truth.'
+      value: 'Boy: It''s for my mom! That''s the truth.'
       objectReference: {fileID: 0}
     - target: {fileID: 7769875120458027332, guid: 6468e68fed223e048860c10a7619c90a,
         type: 3}
@@ -2268,12 +2394,13 @@ PrefabInstance:
     - target: {fileID: 7769875120458027332, guid: 6468e68fed223e048860c10a7619c90a,
         type: 3}
       propertyPath: sentences.Array.data[14]
-      value: 'You: ... Not for the price, but because it sells well around the corner.'
+      value: 'You: ... It''s not for the price, but because it sells well around
+        the corner.'
       objectReference: {fileID: 0}
     - target: {fileID: 7769875120458027332, guid: 6468e68fed223e048860c10a7619c90a,
         type: 3}
       propertyPath: sentences.Array.data[15]
-      value: 'Boy: Don''t be so cold, I swear that''s the truth.'
+      value: 'Boy: Don''t be so cold, I swear I''m telling the truth.'
       objectReference: {fileID: 0}
     - target: {fileID: 7769875120458027332, guid: 6468e68fed223e048860c10a7619c90a,
         type: 3}
@@ -2325,13 +2452,13 @@ PrefabInstance:
     - target: {fileID: 7769875120458027332, guid: 6468e68fed223e048860c10a7619c90a,
         type: 3}
       propertyPath: sentences.Array.data[25]
-      value: You hear sirens in the distance. You know something has to be done.
+      value: '**You hear sirens approaching. You know something has to be done.**'
       objectReference: {fileID: 0}
     - target: {fileID: 7769875120458027332, guid: 6468e68fed223e048860c10a7619c90a,
         type: 3}
       propertyPath: sentences.Array.data[26]
-      value: 'You: Look; take this and go out the back. I''ll take care of the police
-        -- there isn''t any reason you need to get caught up in all of that. '
+      value: 'You: Look; take the medicine and go out the back. I''ll handle the
+        police -- there isn''t any reason you need to get caught up in all of that. '
       objectReference: {fileID: 0}
     - target: {fileID: 7769875120458027332, guid: 6468e68fed223e048860c10a7619c90a,
         type: 3}
@@ -2341,7 +2468,8 @@ PrefabInstance:
     - target: {fileID: 7769875120458027332, guid: 6468e68fed223e048860c10a7619c90a,
         type: 3}
       propertyPath: sentences.Array.data[28]
-      value: 'You: I gotchu. I''ll cover the medicine. Now go take care of your mom.'
+      value: 'You: I got you. I''ll take care of the medicine. Now go take care of
+        your mom.'
       objectReference: {fileID: 0}
     - target: {fileID: 7769875120458027332, guid: 6468e68fed223e048860c10a7619c90a,
         type: 3}
@@ -2828,6 +2956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5aab3d28370796b4987e9c11c82a6896, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  psyImage: {fileID: 21300000, guid: 4d950a2d262a18a4eb0c2ace20e8fa2f, type: 3}
 --- !u!4 &1324486918
 Transform:
   m_ObjectHideFlags: 0
@@ -2878,8 +3007,6 @@ Transform:
   - {fileID: 1764207920}
   - {fileID: 54599477}
   - {fileID: 1112488477}
-  - {fileID: 191427029}
-  - {fileID: 2094531939}
   - {fileID: 1089602801}
   - {fileID: 894714268}
   m_Father: {fileID: 0}
@@ -2917,6 +3044,8 @@ Transform:
   - {fileID: 703612021}
   - {fileID: 480214678}
   - {fileID: 2055638732}
+  - {fileID: 191427029}
+  - {fileID: 2094531939}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2981,7 +3110,7 @@ PrefabInstance:
     - target: {fileID: 7769875120458027332, guid: 6468e68fed223e048860c10a7619c90a,
         type: 3}
       propertyPath: sentences.Array.data[1]
-      value: The boy scurries a bit and drops the bottle he was holding.
+      value: '**The boy scurries a bit and drops the bottle he was holding.**'
       objectReference: {fileID: 0}
     - target: {fileID: 7769875120458027332, guid: 6468e68fed223e048860c10a7619c90a,
         type: 3}
@@ -2991,12 +3120,12 @@ PrefabInstance:
     - target: {fileID: 7769875120458027332, guid: 6468e68fed223e048860c10a7619c90a,
         type: 3}
       propertyPath: sentences.Array.data[3]
-      value: You pick up the bottle.
+      value: '**You pick up the bottle.**'
       objectReference: {fileID: 0}
     - target: {fileID: 7769875120458027332, guid: 6468e68fed223e048860c10a7619c90a,
         type: 3}
       propertyPath: sentences.Array.data[4]
-      value: 'Other patron: Don''t worry I called the police.'
+      value: 'Customer: Don''t worry I called the police.'
       objectReference: {fileID: 0}
     - target: {fileID: 7769875120458027332, guid: 6468e68fed223e048860c10a7619c90a,
         type: 3}
@@ -3469,7 +3598,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2094531939
 Transform:
   m_ObjectHideFlags: 0
@@ -3478,11 +3607,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2094531938}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -697, y: 41, z: 603.5}
+  m_LocalPosition: {x: -1016.432, y: 107.255035, z: -90.4375}
   m_LocalScale: {x: 210, y: 210, z: 1}
   m_Children: []
-  m_Father: {fileID: 1560580872}
-  m_RootOrder: 4
+  m_Father: {fileID: 1569148855}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2094531940
 MonoBehaviour:
@@ -3645,7 +3774,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1000
+  m_Mass: 0.01
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -3653,7 +3782,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 7
 --- !u!61 &2114190839242424394
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4641,12 +4770,12 @@ PrefabInstance:
     - target: {fileID: 7769875120458027339, guid: 6468e68fed223e048860c10a7619c90a,
         type: 3}
       propertyPath: m_Offset.x
-      value: -0.0043837857
+      value: -0.0003402643
       objectReference: {fileID: 0}
     - target: {fileID: 7769875120458027339, guid: 6468e68fed223e048860c10a7619c90a,
         type: 3}
       propertyPath: m_Size.x
-      value: 0.092140704
+      value: 0.17301199
       objectReference: {fileID: 0}
     - target: {fileID: 7769875120458027339, guid: 6468e68fed223e048860c10a7619c90a,
         type: 3}
@@ -4668,8 +4797,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sentences:
-  - Back at the desk, you see two customers; a teenager and a seemingly thirsty patron.
-    Who do you choose to talk to?
+  - Back at the desk, you see two customers; a young boy rummaging around and a seemingly
+    thirsty patron. Who do you choose to talk to?
   dialogueBox: {fileID: 5629688723568752247}
 --- !u!114 &7769875120211844949
 MonoBehaviour:
@@ -4687,8 +4816,8 @@ MonoBehaviour:
   radius: 75
   isChoice: 1
   choices:
-  - Make conversation with the patron.
-  - Ask the kid what they're looking for.
+  - Make conversation with the thirsty patron.
+  - Ask the boy what he's looking for.
   interactButton: {fileID: 7769875119272710459}
   image: {fileID: 21300000, guid: 04f2e733003066f48adf8d9aa18a8806, type: 3}
 --- !u!1 &7769875120211844951
@@ -4702,7 +4831,6 @@ GameObject:
   - component: {fileID: 7769875120211844953}
   - component: {fileID: 7769875120211844952}
   - component: {fileID: 7769875120211844955}
-  - component: {fileID: 7769875120211844956}
   - component: {fileID: 7769875120211844954}
   - component: {fileID: 7769875120211844949}
   - component: {fileID: 7769875120211844948}
@@ -4812,7 +4940,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.9647479, y: -0.028727874}
+  m_Offset: {x: 0.012272835, y: 0.006172329}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4823,33 +4951,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.55242395, y: 0.75364876}
-  m_EdgeRadius: 0
---- !u!61 &7769875120211844956
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7769875120211844951}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.9608599, y: 0.00000011920929}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.69, y: 0.93}
-    newSize: {x: 8.4, y: 3.96}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.6158984, y: 0.77442455}
+  m_Size: {x: 2.644363, y: 0.8986185}
   m_EdgeRadius: 0
 --- !u!4 &9043591812097785057
 Transform:
