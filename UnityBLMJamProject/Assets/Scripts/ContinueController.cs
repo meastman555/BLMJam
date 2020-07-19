@@ -20,7 +20,7 @@ public class ContinueController : MonoBehaviour
                 break;
             case 6:
                 GameObject.Find("InteractableKid").gameObject.SetActive(false);
-                GameObject.Find("Psychiatrist").transform.Find("Interlude1").GetComponent<DialogueTrigger>().TriggerDialogue(psyImage, false, null);
+                GameObject.Find("Psychologist").transform.Find("Interlude1").GetComponent<DialogueTrigger>().TriggerDialogue(psyImage, false, null);
                 break;
             case 7:
                 GameObject.Find("People").transform.Find("InteractableKid2").gameObject.SetActive(true);
@@ -30,6 +30,13 @@ public class ContinueController : MonoBehaviour
                 GameObject.Find("People").transform.Find("InteractableKid3").gameObject.SetActive(true);
                 break;
             case 9:
+                GameObject.Find("Psychologist").transform.Find("Interlude2").GetComponent<DialogueTrigger>().TriggerDialogue(psyImage, false, null);
+                break;
+            case 10:
+                GameObject.Find("InteractableKid3").gameObject.SetActive(false);
+                GameObject.Find("People").transform.Find("InteractableKid4").gameObject.SetActive(true);
+                break;
+            case 11:
                 SceneManager.LoadScene(2);
                 break;
             default:
@@ -37,17 +44,6 @@ public class ContinueController : MonoBehaviour
                 break;     
         }
     }
-
-    // public void ContinueBranch(string nameOfDialogue){
-    //     switch(nameOfDialogue){
-    //         case "Static Kid":
-    //             GameObject.Find("StaticKid").gameObject.SetActive(false);
-    //             GameObject.Find("People").transform.Find("InteractableKid").gameObject.SetActive(true);
-    //             break;
-    //         default:
-    //             break;
-    //     }
-    // }
 
     // Start is called before the first frame update
     void Start()
